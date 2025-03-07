@@ -7,15 +7,24 @@
     <title>Title</title>
 </head>
 <body>
-    <input type="number" id="number1"/>
-    <select id="operation">
-        <option>+</option>
-        <option>-</option>
-        <option>/</option>
-        <option>*</option>
-    </select>
-    <input type="number" id="number2"/>
-    <button onclick="whenButtonClicked()">Посчитать</button>
-    <textarea id="result"></textarea>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="input">
+                <input type="number" id="number1" placeholder="123"/>
+                <select id="operation">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>/</option>
+                    <option>*</option>
+                </select>
+                <input type="number" id="number2" placeholder="567"/>
+            </div>
+        </div>
+        <button onclick="whenButtonClicked()">Подсчитать</button>
+        <div class="result" id="result">
+            <p id="previous">Результат</p>
+            <p id="current" style="display: none;">0</p>
+        </div>
+    </div>
 </body>
 </html>
